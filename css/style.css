@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-bg-color: hsl(356, 100%, 66%);
+    --header-text-color: hsl(355, 100%, 74%);
+}
+
+
+/*----------------------- HEADER -----------------------*/
+
+.header {
+    background: 
+        var(--header-bg-color) 
+        url(../images/bg-pattern-intro-desktop.svg)
+        no-repeat
+        right
+    ;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+}
+
+.list-item {
+    position: relative;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.sub-list {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #1d52ff;
+    min-width: 100%;
+}
