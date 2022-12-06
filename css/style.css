@@ -14,6 +14,8 @@ font-family: 'Ubuntu', sans-serif;
 :root {
     --header-bg-color: hsl(356, 100%, 66%);
     --header-text-color: hsl(355, 100%, 74%);
+    --title-color: hsl(237, 17%, 21%);
+    --pharagraph-color: hsl(207, 13%, 34%);
 }
 
 html {
@@ -152,6 +154,73 @@ html {
 .btn-bottom-header {
     text-align: center;
 }
+
+
+
+
+
+/*----------------------- MAIN -----------------------*/
+.main {
+    font-family: 'Overpass', sans-serif;
+}
+
+
+.first-section {
+    position: relative;
+    padding-top: 150px;
+}
+
+.section-title {
+    font-size: 2.3rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.title {
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 174.5px;
+    margin-top: -100px;
+}
+
+.txt-blue {
+    width: 50%;
+    margin-right: 100px;
+}
+
+.pharagraph {
+    margin-top: 20px;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 300;
+    color: var(--pharagraph-color);
+}
+
+.section-title,
+.title {
+    color: var(--title-color);
+}
+
+.img-editor {
+    background-image: url(../images/illustration-editor-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    
+    height: 800px;
+    width: 700px;
+}
+
+
 
 
 @media (max-width: 1000px) {
