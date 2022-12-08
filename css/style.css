@@ -9,6 +9,7 @@ font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
 }
 
 :root {
@@ -16,6 +17,9 @@ font-family: 'Ubuntu', sans-serif;
     --header-text-color: hsl(355, 100%, 74%);
     --title-color: hsl(237, 17%, 21%);
     --pharagraph-color: hsl(207, 13%, 34%);
+    --footer-bg: hsl(240, 10%, 16%);
+    --padding-side: 124.5px;
+    --border-radius: 80px;
 }
 
 html {
@@ -74,6 +78,11 @@ html {
     margin-top: -100px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /*----------------------- HEADER -----------------------*/
 
 .header {
@@ -84,9 +93,8 @@ html {
         right
     ;
     background-size: cover;
-    font-family: 'Overpass', sans-serif;
     color: white;
-    border-bottom-left-radius: 80px;
+    border-bottom-left-radius: var(--border-radius);
     padding: 50px 0;
 }
 
@@ -95,10 +103,6 @@ html {
     font-weight: 600;
 }
 
-.header a {
-    text-decoration: none;
-    color: white;
-}
 
 .nav {
     display: flex;
@@ -166,23 +170,13 @@ html {
 
 
 
-/*----------------------- MAIN -----------------------*/
-
-
-
-.main {
-    font-family: 'Overpass', sans-serif;
-}
-
-
-
 /*----------------------- EDITOR -----------------------*/
 
 
 
 .editor {
     padding-top: 150px;
-    padding-left: 124.5px;
+    padding-left: var(--padding-side);
 }
 
 .section-title {
@@ -237,7 +231,7 @@ html {
 .smartphones {
     position: relative;
     background-image: linear-gradient(to right, var(--title-color), hsl(208, 49%, 24%) );
-    border-radius: 0 80px;
+    border-radius: 0 var(--border-radius);
     margin: 150px 0;
 }
 
@@ -263,12 +257,63 @@ html {
 }
 
 
+/*----------------------- NOTEBOOK -----------------------*/
+
+.notebook {
+    padding-top: 0px;
+    padding-right: var(--padding-side);
+}
+
+.img-note {
+    background-image: url(../images/illustration-laptop-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    
+    height: 800px;
+    width: 700px;
+}
 
 
 
 
+/*----------------------- FOOTER -----------------------*/
 
+.footer {
+    background-color: var(--footer-bg);
+    border-top-right-radius: var(--border-radius);
+    padding: 50px;
+    color: white;
+}
 
+.flex-ft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-menu {
+    margin: 0;
+    width: 800px;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.menu-ft {
+    width: 33%;
+}
+
+.ft-list-li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.ft-list-li > a:hover {
+    text-decoration: underline;
+}
+
+.ft-title {
+    margin-bottom: 30px;
+}
 
 
 
